@@ -41,42 +41,45 @@ th, td {
 }
 
 thead {
-  background-color: #007bff; /* Blue color for table header */
+  background-color: #007bff;
   color: white;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f2f2f2; /* Light gray background for even rows */
 }
 
 form {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: space-between; /* Distribute form elements evenly */
+}
+form label {
+  color: #333;
+  margin-bottom: 5px; /* Add some bottom margin to labels */
+  flex: 1 1 100%; /* Take full width of the container */
 }
 
 label {
-  flex: 1 1 120px;
+  flex: 1 1 120px; /* Flex basis for labels */
   color: #333;
 }
 
 input, button {
+  flex: 1 1 calc(50% - 10px); /* Flex basis for inputs and button */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 input[type="text"], input[type="number"] {
-  width: calc(50% - 5px); /* Adjust input width */
+  width: 100%; /* Full width for text and number inputs */
 }
 
 button {
-  background-color: #28a745; /* Green color for buttons */
+  background-color: #28a745;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #218838; /* Darker green color on hover */
+  background-color: #218838;
 }
